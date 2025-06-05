@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunRise Industries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">SunRise <span>Industries</span></a>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero section" id="home">
+        <div class="container">
+            <h1>Sun Rise Industries</h1>
+            <p>Your trusted partner for high-quality hardware and construction materials in Sri Lanka at reasonable prices</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn">Explore Products</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features section" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-star feature-icon"></i></div>
+                    <h3>Quality Products</h3>
+                    <p>We offer only the highest quality construction materials and hardware products that meet international standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-dollar-sign feature-icon"></i></div>
+                    <h3>Competitive Prices</h3>
+                    <p>Our products are available at reasonable prices without compromising on quality or performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-truck feature-icon"></i></div>
+                    <h3>Reliable Delivery</h3>
+                    <p>We ensure timely delivery of products to your construction site or home across Sri Lanka.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-headset feature-icon"></i></div>
+                    <h3>Expert Support</h3>
+                    <p>Our team of experts is always ready to provide technical advice and support for your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="waterproofing">Waterproofing</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="chemicals">Chemicals</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="construction" data-tooltip="High-strength material">
+                    <div class="product-img">
+                        <img src="barralastic.png" alt="Baralastic">
+                    </div>
+                    <div class="product-info">
+                        <h3>Baralastic</h3>
+                        <p>Premium quality construction material for lasting durability and strength. Ideal for various construction applications.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Baralastic" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="waterproofing" data-tooltip="Advanced sealing solution">
+                    <div class="product-img">
+                        <img src="images/tharawa-seal.jpg" alt="Tharawa Seal">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tharawa Seal</h3>
+                        <p>Advanced sealing solution for construction projects. Provides excellent waterproofing and protection against elements.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Tharawa%20Seal" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="construction" data-tooltip="High-performance grout">
+                    <div class="product-img">
+                        <img src="images/construction-grout.jpg" alt="Construction Grout">
+                    </div>
+                    <div class="product-info">
+                        <h3>Construction Grout</h3>
+                        <p>High-performance grout for professional applications. Ensures strong bonding and durability in structural joints.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Construction%20Grout" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="construction" data-tooltip="Superior emulsion">
+                    <div class="product-img">
+                        <img src="images/barra-immulsion.jpg" alt="Barra Immulsion">
+                    </div>
+                    <div class="product-info">
+                        <h3>Barra Immulsion</h3>
+                        <p>Superior quality emulsion for construction needs. Provides excellent adhesion and flexibility for various surfaces.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Barra%20Immulsion" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="chemicals" data-tooltip="Water treatment chemical">
+                    <div class="product-img">
+                        <img src="images/chlorin.jpg" alt="Chlorin">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chlorin</h3>
+                        <p>High-quality chlorin products for water treatment and cleaning applications in construction and maintenance.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Chlorin" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="construction" data-tooltip="Corrosion-resistant material">
+                    <div class="product-img">
+                        <img src="images/titanium.jpg" alt="Titanium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Titanium</h3>
+                        <p>Premium titanium-based products for specialized construction applications requiring strength and corrosion resistance.</p>
+                        <div class="btn-container">
+                            <a href="#contact" class="btn">Inquire Now</a>
+                            <a href="https://wa.me/+94760154249?text=I'm%20interested%20in%20purchasing%20Titanium" class="btn btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Sun Rise Industries</h2>
+                    <p>Sun Rise Industries is a registered company in Sri Lanka dedicated to offering high-quality hardware and construction items at reasonable prices. With years of experience in the industry, we have built a reputation for excellence and reliability.</p>
+                    <p>Our mission is to provide construction professionals and DIY enthusiasts with durable and reliable products that meet their specific needs. We take pride in our extensive product range and commitment to customer satisfaction.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <p>Products</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <p>Quality Assurance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="about.png" alt="About Sun Rise Industries">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section" id="feedback">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Sun Rise Industries has been our trusted supplier for construction materials for over 5 years. Their products are of exceptional quality and their service is always reliable."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Rajith Fernando</h4>
+                                    <p>Construction Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"As a home renovation enthusiast, I've tried many brands, but Sun Rise Industries' products stand out for their durability and performance. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Priyanka Silva</h4>
+                                    <p>Homeowner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The technical support and product knowledge of the Sun Rise team is impressive. They've helped us select the right materials for our complex projects multiple times."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Ashan Perera</h4>
+                                    <p>Architect</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>123 Construction Avenue, Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+94 76 015 4249</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@sunriseindustries.lk</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8:30 AM - 5:30 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Sun Rise Industries</h2>
+                    <p>Quality Hardware & Construction Materials</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Stay updated with our latest products and offers</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                        <div id="newsletter-message" class="form-message"></div>
+                    </form>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>123 Construction Avenue, Colombo, Sri Lanka</p>
+                    <p>+94 76 015 4249</p>
+                    <p>info@sunriseindustries.lk</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>© 2025 Sun Rise Industries. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal">×</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+</body>
+</html>
